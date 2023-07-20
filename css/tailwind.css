@@ -568,6 +568,10 @@ video {
   }
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .collapse {
   visibility: collapse;
 }
@@ -619,8 +623,16 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-16 {
-  margin-bottom: 4rem;
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-5 {
@@ -723,6 +735,10 @@ video {
 
 .max-w-\[1280px\] {
   max-width: 1280px;
+}
+
+.max-w-\[40px\] {
+  max-width: 40px;
 }
 
 .max-w-\[700px\] {
@@ -927,16 +943,16 @@ video {
   padding-bottom: 5vmin;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -1033,13 +1049,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.drop-shadow-lg {
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+.drop-shadow-\[_0px_4px_4px_rgba\(0\2c 0\2c 0\2c 0\.25\)\] {
+  --tw-drop-shadow: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.drop-shadow-xl {
-  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1049,6 +1065,10 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .ease-in-out {
@@ -1218,6 +1238,11 @@ video {
 
 .marker\:text-coralred::marker {
   color: rgb(228 99 88 );
+}
+
+.hover\:bg-coraldark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 87 77 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
